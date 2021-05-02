@@ -1,53 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage1 extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePage1State createState() => _HomePage1State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage1State extends State<HomePage1> {
   TextEditingController _addItemController = TextEditingController();
 
   List<String> videoID = [
-    'https://youtu.be/xLetJpcjHS0',
-    'https://youtu.be/5_5oE5lgrhw',
-    'https://youtu.be/w4LkuBGzPzs',
-    'https://youtu.be/zWg7U0OEAoE',
-    'https://youtu.be/g1USSZVWDsY',
-    'https://youtu.be/PGWZUgzDMYI',
-    'https://youtu.be/BmayUdDaDYM',
-    'https://youtu.be/KW0UvOW0XIo',
-    'https://youtu.be/tORLeHHtazM',
-    'https://youtu.be/eWeqqVpgNPg',
-    'https://youtu.be/bvOYfDpk940',
-    'https://youtu.be/KyMiqaA0ijM',
-    'https://youtu.be/gtWw_8VvHjk',
-    'https://youtu.be/mRGQylRWAsI',
-    'https://youtu.be/TbvhGcf6UJU',
-    'https://youtu.be/JZhdUb5F7oY',
-    'https://youtu.be/JRsN4Oz36QU',
-    'https://youtu.be/6QOKk_pcv3U',
-    'https://youtu.be/VbVroFR4mq4',
-    'https://youtu.be/uhAUk63tLRM',
-    'https://youtu.be/5wRPin4oxCo',
-    'https://youtu.be/P4toxusBX9M',
-    'https://youtu.be/HjPmZuOXkHQ',
-    'https://youtu.be/4OxBvBXon5w',
-    'https://youtu.be/cR4rxllyiCs',
-    'https://youtu.be/9zpSs845wf8',
-    'https://youtu.be/hk5rQs7TQ7E',
-    'https://youtu.be/r1-8p11fSPw',
-    'https://youtu.be/CIm6RzdoPCI',
-    'https://youtu.be/bmyyxNyZKzI',
-    'https://youtu.be/Lw5rRctO9js',
-    'https://youtu.be/o6YWEsLslKs',
-    'https://youtu.be/k9jemw3SZe0',
-    'https://youtu.be/kajZRdXi6fA',
-    'https://youtu.be/7FtGk9yr66A',
-    'https://youtu.be/ng1oliu806U',
-    'https://youtu.be/NR0qG64gZUs',
-    'https://youtu.be/R36g6qit1bE'
+    'https://youtu.be/7jaa1rlW7Ak',
+    'https://youtu.be/z3MlkNUuq9w',
+    'https://youtu.be/QpqDBq9zxw4',
+    'https://youtu.be/yu8xvHHTij0',
+    'https://youtu.be/VQzY8d7OjG8',
+    'https://youtu.be/qy6oOGNy8Vc',
+    'https://youtu.be/WbDvUitRKi8',
+    'https://youtu.be/rjP9kuUaTcc',
+    'https://youtu.be/cAu_Qv6rsM8',
+    'https://youtu.be/itL2MQqZtqA',
+    'https://youtu.be/d3VIDO0S7xk',
+    'https://youtu.be/yvH4tgqqu2U',
+    'https://youtu.be/QJnzpNgIu08',
+    'https://youtu.be/aOKc5_s_8LM',
+    'https://youtu.be/_vKeaPHXF9U',
+    'https://youtu.be/ApFMXUzc7OM',
+    'https://youtu.be/WX0xQWRTPjs',
+    'https://youtu.be/06Or9jeeZPM',
+    'https://youtu.be/TaTGnbxIMdY',
+    'https://youtu.be/XvTyn9qMdUQ'
   ];
   bool showItem = false;
 
