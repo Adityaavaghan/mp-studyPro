@@ -1,6 +1,7 @@
 import 'package:book_app/branches_grid_view.dart';
 import 'package:book_app/chatbot/student_chatbot.dart';
 import 'package:book_app/consttants.dart';
+import 'package:book_app/downloadpdfs/isepdfs.dart';
 import 'package:book_app/screens/Civilhome_screen.dart';
 import 'package:book_app/screens/home_screen.dart';
 import 'package:book_app/widgets/rounded_button.dart';
@@ -15,18 +16,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Book App',
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        textTheme: Theme.of(context).textTheme.apply(
-              displayColor: kBlackColor,
-            ),
-      ),
-      home: MyHomePage(
-        title: 'Discussion Forum',
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Book App',
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          textTheme: Theme.of(context).textTheme.apply(
+                displayColor: kBlackColor,
+              ),
+        ),
+        home: IsePdfs());
   }
 }
 
@@ -93,7 +91,17 @@ class HomeState extends State<Home> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) {
+                  return MyHomePage(
+                    title: 'Discussion Forum',
+                  );
+                },
+              ),
+            );
+          },
           child: Icon(Icons.chat_outlined),
           backgroundColor: Colors.black45,
         ));
