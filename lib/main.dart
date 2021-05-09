@@ -1,7 +1,6 @@
 import 'package:book_app/branches_grid_view.dart';
 import 'package:book_app/chatbot/student_chatbot.dart';
 import 'package:book_app/consttants.dart';
-import 'package:book_app/downloadpdfs/isepdfs.dart';
 import 'package:book_app/screens/Civilhome_screen.dart';
 import 'package:book_app/screens/home_screen.dart';
 import 'package:book_app/widgets/rounded_button.dart';
@@ -24,7 +23,9 @@ class MyApp extends StatelessWidget {
                 displayColor: kBlackColor,
               ),
         ),
-        home: IsePdfs());
+        home: MyHomePage(
+          title: 'ChatBox',
+        ));
   }
 }
 
